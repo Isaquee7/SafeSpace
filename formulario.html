@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/styles/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSpace - Enviar Denúncia</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <img  src="/images/logo-space-removebg.png" alt="SafeSpace Logo" class="form-logo">
+        <h1 class="form-title">Envie sua Denúncia Anônima</h1>
+        <p class="form-description">Contribua para um ambiente escolar mais seguro, enviando uma denúncia ou feedback de forma totalmente anônima.</p>
+
+        <form id="denunciaForm" class="form-content">
+            <!-- Tipo de Denúncia -->
+            <label for="tipoDenuncia">Tipo de Denúncia</label>
+            <select id="tipoDenuncia" name="tipoDenuncia">
+                <option value="denuncia">Denúncias</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <!-- Tipo de Problema -->
+            <label for="tipoProblema">Tipo de Problema</label>
+            <select id="tipoProblema" name="tipoProblema">
+                <option value="bullying">Bullying</option>
+                <option value="assedio">Assédio</option>
+                <option value="violencia">Violência</option>
+                <option value="discriminacao">Discriminação</option>
+                <option value="outra">Outra</option>
+            </select>
+
+            <!-- Assunto -->
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
+
+            <!-- Descrição -->
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva sua denúncia ou feedback"></textarea>
+
+            <!-- Anexar Arquivos (Opcional) -->
+            <label for="arquivo">Anexar Arquivo (Opcional)</label>
+            <input type="file" id="arquivo" name="arquivo">
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="form-button">Enviar Denúncia</button>
+        </form>
+    </div>
+
+</body>
+</html>
